@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  delight.presentation.api:
+    image: ${DOCKER_REGISTRY-}delightpresentationapi
+    build:
+      context: .
+      dockerfile: DELIGHT/Dockerfile
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=DELIGHTDB;User Id=sa;Password=2024-0064-607012520A;Encrypt=False;TrustServerCertificate=True;
+    ports:
+      - "8080:80"
+    networks:
+      - delight-network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "2024-0064-607012520A"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+    networks:
+      - delight-network
+
+volumes:
+  sqlserverdata:
+
+networks:
+  delight-network:
+    driver: bridge
