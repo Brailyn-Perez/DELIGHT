@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DELIGHT.Core.Application\DELIGHT.Core.Application.csproj" />
-    <ProjectReference Include="..\DELIGHT.Infraestructure.Persistence\DELIGHT.Infraestructure.Persistence.csproj" />
+    <ProjectReference Include="..\DELIGHT.Infraestructure.Persistence\DELIGHT.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

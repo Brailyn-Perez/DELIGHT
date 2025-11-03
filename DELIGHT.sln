@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{229B0F41-023A-4B75-9054-8B12C048D729}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{229B0F41-023A-4B75-9054-8B12C048D729}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DELIGHT.Core.Domain", "DELIGHT.Core.Domain\DELIGHT.Core.Domain.csproj", "{DA9B9DA2-EA2B-4650-BDCC-887B5D62B04E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DELIGHT.Infraestructure.Persistence", "DELIGHT.Infraestructure.Persistence\DELIGHT.Infraestructure.Persistence.csproj", "{2B8958C8-F5B9-420F-9967-86DC2CCA0CD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DELIGHT.Infrastructure.Persistence", "DELIGHT.Infraestructure.Persistence\DELIGHT.Infrastructure.Persistence.csproj", "{2B8958C8-F5B9-420F-9967-86DC2CCA0CD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DELIGHT.Core.Application", "DELIGHT.Core.Application\DELIGHT.Core.Application.csproj", "{95C0787E-AB70-4CC9-B78E-618C1A8C4096}"
 EndProject
