@@ -15,7 +15,7 @@ WORKDIR /src
 COPY ["DELIGHT/DELIGHT.Presentation.Api.csproj", "DELIGHT/"]
 COPY ["DELIGHT.Core.Application/DELIGHT.Core.Application.csproj", "DELIGHT.Core.Application/"]
 COPY ["DELIGHT.Core.Domain/DELIGHT.Core.Domain.csproj", "DELIGHT.Core.Domain/"]
-COPY ["DELIGHT.Infrastructure.Persistence/DELIGHT.Infrastructure.Persistence.csproj", "DELIGHT.Infrastructure.Persistence/"]
+COPY ["DELIGHT.Infraestructure.Persistence/DELIGHT.Infrastructure.Persistence.csproj", "DELIGHT.Infraestructure.Persistence/"]
 RUN dotnet restore "./DELIGHT/DELIGHT.Presentation.Api.csproj"
 COPY . .
 WORKDIR "/src/DELIGHT"
