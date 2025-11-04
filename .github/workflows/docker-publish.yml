@@ -21,7 +21,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./DELIGHT
-          file: ./DELIGHT/Dockerfile
+          context: .  # ← CAMBIA ESTO al directorio raíz
+          file: ./DELIGHT/Dockerfile  # ← El Dockerfile sigue en DELIGHT/
           push: true
           tags: dinendy/delight:latest
